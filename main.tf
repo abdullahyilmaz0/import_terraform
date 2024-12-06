@@ -8,3 +8,8 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   # (resource arguments...)
 }
+
+import {
+  to = aws_security_group.mysg
+  id = "sg-041c26df9a7789090"
+}
